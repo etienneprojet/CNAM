@@ -4,12 +4,13 @@
  */
 public class Loto {
 
-
     private Joueur joueur;
+    private int nbrTirages;
 
     public Loto() {
 
         joueur = new Joueur();
+        nbrTirages = 1;
     }
 
     public void tirage() {
@@ -25,7 +26,10 @@ public class Loto {
 
     public void uneGrille() {
 
+        System.out.println("");
+        System.out.print("Tirage n°" + nbrTirages + " : ");
         joueur.jouer();
+        nbrTirages++;
     }
 
     public boolean perdu() {
@@ -44,7 +48,7 @@ public class Loto {
 
         if(joueur.aGagne()) {
 
-            System.out.print("Le jackpot est sorti au bout de " + " tirages");
+            System.out.print("Le jackpot est sorti au bout de " + nbrTirages + " tirages");
         }
     }
 }

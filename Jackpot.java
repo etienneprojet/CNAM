@@ -48,7 +48,7 @@ public class Jackpot {
                 six = true;
                 break;
             default :
-                System.out.print(" pas de jackpot");
+                System.out.print(valeur + " ");
         }
     }
 

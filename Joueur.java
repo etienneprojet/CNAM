@@ -11,6 +11,9 @@ public class Joueur {
 
         gagne = false;
         boules = new Boule[6];
+        for (int i = 0 ; i < boules.length ; i++) {
+            boules[i] = new Boule();
+        }
     }
 
     public void jouer() {
